@@ -5,21 +5,27 @@ from bot.logging_config import logger
 
 
 def main():
-    # CLI argument parser
     parser = argparse.ArgumentParser("Binance Futures Testnet Trading Bot")
 
-    # Required trading parameters
-    parser.add_argument("--symbol", required=True)              # e.g. BTCUSDT
+    # Optional API credentials (CLI or env)
+    parser.add_argument("--api-key", help="Binance API key (optional)")
+    parser.add_argument("--api-secret", help="Binance API secret (optional)")
+
+    # Order parameters
+    parser.add_argument("--symbol", required=True)
     parser.add_argument("--side", required=True, choices=["BUY", "SELL"])
     parser.add_argument("--type", required=True, choices=["MARKET", "LIMIT"])
     parser.add_argument("--quantity", required=True, type=float)
-    parser.add_argument("--price", type=float)                  # Only for LIMIT
+    parser.add_argument("--price", type=float)
 
     args = parser.parse_args()
 
     try:
-        # Initialize client and order service
-        client = BinanceFuturesClient()
+        # Initialize client (CLI keys if provided, else env vars)
+        client = BinanceFuturesClient(
+            api_key=args.api_key,
+            api_secret=args.api_secret
+        )
         service = OrderService(client)
 
         # Print user input summary
