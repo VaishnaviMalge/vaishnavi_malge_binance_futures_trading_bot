@@ -13,3 +13,4 @@
 2026-03-04 18:24:14,856 | INFO | TradingBot | Order response: {}
 2026-03-04 18:24:48,439 | INFO | TradingBot | Order request: {'symbol': 'LTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.3}
 2026-03-04 18:24:48,940 | INFO | TradingBot | Order response: {}
+
