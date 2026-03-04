@@ -1,0 +1,15 @@
+2026-03-04 18:20:23,086 | INFO | TradingBot | Binance Futures Testnet client initialized
+2026-03-04 18:21:17,306 | INFO | TradingBot | Order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-03-04 18:21:19,329 | INFO | TradingBot | Order response: {}
+2026-03-04 18:21:58,098 | INFO | TradingBot | Order request: {'symbol': 'BNBUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.2, 'price': 350.0, 'timeInForce': 'GTC'}
+2026-03-04 18:21:58,591 | INFO | TradingBot | Order response: {}
+2026-03-04 18:22:27,017 | INFO | TradingBot | Order request: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.05}
+2026-03-04 18:22:27,305 | INFO | TradingBot | Order response: {}
+2026-03-04 18:23:03,289 | INFO | TradingBot | Order request: {'symbol': 'ADAUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 50.0, 'price': 0.42, 'timeInForce': 'GTC'}
+2026-03-04 18:23:03,995 | INFO | TradingBot | Order response: {}
+2026-03-04 18:23:36,560 | INFO | TradingBot | Order request: {'symbol': 'SOLUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.5}
+2026-03-04 18:23:37,021 | INFO | TradingBot | Order response: {}
+2026-03-04 18:24:14,566 | INFO | TradingBot | Order request: {'symbol': 'XRPUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 100.0, 'price': 0.45, 'timeInForce': 'GTC'}
+2026-03-04 18:24:14,856 | INFO | TradingBot | Order response: {}
+2026-03-04 18:24:48,439 | INFO | TradingBot | Order request: {'symbol': 'LTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.3}
+2026-03-04 18:24:48,940 | INFO | TradingBot | Order response: {}
