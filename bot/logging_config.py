@@ -9,6 +9,7 @@ LOG_FILE = os.path.join(LOG_DIR, "trading_bot.log")
 os.makedirs(LOG_DIR, exist_ok=True)
 
 # Basic logging configuration
+# All application logs are written to logs/trading_bot.log
 logging.basicConfig(
     level=logging.INFO,                                              # INFO level captures normal flow + important events
 
